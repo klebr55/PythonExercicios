@@ -1,4 +1,7 @@
-numero = int(input("Me diga um número, irei somá-lo com o próximo que digitares após este input: "))
-numero2 = int(input("Me diga outro número: "))
+#Exercício Python 3: Crie um programa que leia dois números e mostre a soma entre eles.
 
-print(f"A soma entre os dois números que você digitou é igual a: {numero + numero2}")
+numero = int(input("Digite um número: "))
+numero2 = int(input("Digite outro número: "))
+soma: int = numero + numero2
+
+print(f"A soma entre esses dois números é: {soma}")
