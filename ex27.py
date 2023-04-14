@@ -3,6 +3,5 @@
 
 nome = str(input("Informe seu nome: ")).strip()
 nome = nome.split()
-print(f"Seu primeiro nome é {nome[0]}")
-print(f"Seu último nome é {nome.[:9999]}")
-
+print(f"Seu primeiro nome é {nome[0]}")  # Pega o primeiro caracter do nome
+print(f"Seu último nome é {nome[len(nome) - 1]}")  # Pega o último caracter do nome
