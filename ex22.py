@@ -24,8 +24,3 @@ print(f"Seu nome tem ao todo: "
       f"{len(nome) - nome.count(' ')}"
       f" letras")
 print(f"Seu primeiro nome é {dividido[0]} e possui: {len(dividido[0])} letras")
-
-
-
-
-
