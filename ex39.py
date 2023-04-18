@@ -15,8 +15,9 @@ if idade < 18:
     print(f"Seu alistamento será em {datetime.now().year + alistamento}")
 elif idade == 18:
     print(f"Você precisa realizar o alistamento imediatamente!"
-          f"\nFaça seu alistamento online pelo site www.alistamento.eb.mil.br")
+          f"\nRealize seu alistamento online pelo site www.alistamento.eb.mil.br"
+          f"\nEsteja em dia com sua pátria, jovem :)")
 elif idade > 18:
-    print(f"Você já deveria ter se alistado há {datetime.now().year + idade} anos.")
-    print(f"Seu alistamento foi em {alistamento - datetime.now().year}")
+    print(f"Você já deveria ter se alistado há {alistamento - (alistamento * 2)} anos.")
+    print(f"Seu alistamento foi em {datetime.now().year + alistamento}")
 
