@@ -30,4 +30,3 @@ lista = random.choice(lista)  # .choice escolhe aleatoriamente o objeto que
                                 # você colocar dentro dos parenteses
 
 print(f"\nO aluno {lista} foi escolhido para apagar o quadro :D")
-
