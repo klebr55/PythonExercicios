@@ -19,6 +19,3 @@ if sexo == 'M':
 elif sexo == 'F':
     sexo = 'Feminino'
 print(f"O sexo de {nome} é {sexo}")
-
-
-

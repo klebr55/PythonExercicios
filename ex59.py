@@ -11,9 +11,11 @@
 opcao = 0
 maior = 0
 while opcao != 5:
-    numero1 = int(input("Qual será o primeiro valor?: "))
-    numero2 = int(input("Qual será o segundo valor?: "))
-    while opcao != 4:
+    while opcao == 0:
+        numero1 = int(input("Qual será o primeiro valor?: "))
+        numero2 = int(input("Qual será o segundo valor?: "))
+        opcao = 6
+    while opcao == 6:
         opcao = int(input(f"{'=' * 6} Escolha uma opção {'=' * 6}"
                           f"\n[1] Somar"
                           f"\n[2] Multiplicar"
@@ -22,10 +24,13 @@ while opcao != 5:
                           f"\n[5] Sair do programa"
                           f"\nEscolha sua opção: "))
         if opcao == 1:
+            opcao = 6
             print(f"A soma entre {numero1} e {numero2} é: {numero1 + numero2}")
         elif opcao == 2:
+            opcao = 6
             print(f"A multiplicação entre {numero1} e {numero2} é: {numero1 * numero2}")
         elif opcao == 3:
+            opcao = 6
             if numero1 > numero2:
                 maior = numero1
                 print(f"O maior número é o número {numero1}")
@@ -35,7 +40,11 @@ while opcao != 5:
             elif numero1 == numero2:
                 print(f"Os números possuem o mesmo valor")
         elif opcao == 4:
+            opcao = 0
             print(f"Ok, pode escolher seus novos números :)")
         elif opcao == 5:
-            opcao = 52
+            opcao = 5
             print(f"Ok, saindo do programa...")
+        else:
+            opcao = 6
+            print(f"Opção errada, digite novamente...")
