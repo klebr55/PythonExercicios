@@ -16,7 +16,7 @@ while 'N' not in opcao:
         maior = numero
     elif numero < menor:
         menor = numero
-    somador = numero
+    somador += numero
     contador += 1
     opcao = str(input("Quer continuar?: ")).strip().upper()
     if 'S' in opcao:
